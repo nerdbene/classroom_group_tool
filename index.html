@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroupMaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1>👥 GroupMaker</h1>
+            <a href="https://github.com/benito-lanesan/teacherpyramid" target="_blank" class="github-btn">
+                <i class="fab fa-github"></i> Source Code
+            </a>
+        </div>
+        <div class="nav-right">
+            <span class="author">by Bene - 2024</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="input-section">
+            <div class="student-input">
+                <input type="text" id="studentName" placeholder="Enter student name">
+                <button id="addStudent" class="btn">Add Student ➕</button>
+            </div>
+            <div class="group-size">
+                <input type="number" id="groupSize" min="2" value="2" placeholder="Students per group">
+                <button id="makeGroups" class="btn primary">Make Groups! 🎲</button>
+            </div>
+            <button id="resetBtn" class="btn reset">Reset 🔄</button>
+        </div>
+
+        <div class="student-list">
+            <h2>Student List:</h2>
+            <div id="studentTags" class="tag-container"></div>
+        </div>
+
+        <div id="groupsContainer" class="groups-container">
+            <!-- Groups will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
